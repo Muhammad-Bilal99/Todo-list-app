@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url(images/bg-desktop-dark.jpg) no-repeat;
+  background-size: cover;
+  background-color: hsl(235, 21%, 11%);
+}
+
 .todo-container {
   position: fixed;
   top: 0;
@@ -21,8 +27,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: aquamarine;
+  background: transparent;
   width: 25rem;
+  color: #ffffff;
+}
+
+.heading-container img {
+  cursor: pointer;
 }
 
 .input::placeholder {
@@ -31,33 +42,37 @@
 
 .input {
   width: 25rem;
-  height: 2.5rem;
+  height: 3rem;
   padding: 5px 10px;
-  background-color:  hsl(233, 14%, 35%);
+  background-color:  hsl(237, 14%, 26%);
   color: hsl(234, 39%, 85%);
   font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 5px;
+  outline: none;
 }
 
 .todo-list {
+  width: 25rem;
   margin-top: 2rem;
 }
 
 li {
   list-style-type: none;
   width: 25rem;
-  height: 2.5rem;
+  height: 3rem;
   padding: 5px 10px;
-  background-color: hsl(234, 11%, 52%);
+  background-color: hsl(237, 14%, 26%);
   color: hsl(234, 39%, 85%);
   font-weight: 600;
-  margin-top: 1rem;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid hsl(234, 11%, 52%);
+  top: 0;
 }
 
 .checkBox {
-  background-image: url(images/icon-check.svg) no-repeat;
-  background-size: cover;
+  background: linear-gradient(#57ddff to #c058f3);
   height: 16px; width: 16px;
   border: 1px solid hsl(234, 39%, 85%);
   clip-path: circle(46% at 50% 50%);
@@ -65,4 +80,41 @@ li {
 
 p {
   margin-left: 1rem;
+}
+
+
+.features-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(237, 14%, 26%);
+  color: hsl(234, 39%, 85%);
+  font-size: 14px;
+  height: 2.5rem;
+  width: 25rem;
+  padding-inline: 10px;
+  bottom: 0;
+}
+
+.aac p:hover {
+  color: #ffffff;
+} 
+
+.aac p:active {
+  color:  hsl(220, 98%, 61%);
+}
+
+.aac {
+  display: flex;
+  align-items: center;
+  gap: -10px;
+}
+
+.clear-completed:hover {
+  color: #ffffff;
+} 
+
+.clear-completed:active {
+  color:  hsl(220, 98%, 61%);
 }

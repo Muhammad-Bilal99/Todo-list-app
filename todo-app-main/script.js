@@ -21,7 +21,9 @@ input.addEventListener('keypress', (e)=> {
   li.appendChild(checkBox);
   li.appendChild(p);
 
+
   todoList.appendChild(li)
-    }
-  }
+  input.value = ''
+}
+}
 })
