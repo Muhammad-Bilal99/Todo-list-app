@@ -67,16 +67,47 @@ li {
   font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid hsl(234, 11%, 52%);
-  top: 0;
 }
 
+li p {
+  display: flex;
+  flex-grow: 1;
+}
+
+
 .checkBox {
-  background: linear-gradient(#57ddff to #c058f3);
+  background-color: hsl(237, 14%, 26%);
   height: 16px; width: 16px;
   border: 1px solid hsl(234, 39%, 85%);
   clip-path: circle(46% at 50% 50%);
+  cursor: pointer;
 }
+
+.checkBox-active {
+  background-image: linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.deleteBtn {
+  background: url(./images/icon-cross.svg);
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+.deleteBtn > img {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.deleteBtn:hover {
+  opacity: 100%;
+}
+
 
 p {
   margin-left: 1rem;
@@ -84,7 +115,6 @@ p {
 
 
 .features-container {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +124,6 @@ p {
   height: 2.5rem;
   width: 25rem;
   padding-inline: 10px;
-  bottom: 0;
 }
 
 .aac p:hover {
@@ -109,6 +138,11 @@ p {
   display: flex;
   align-items: center;
   gap: -10px;
+  cursor: pointer;
+}
+
+.clear-completed{
+  cursor: pointer;
 }
 
 .clear-completed:hover {
@@ -117,4 +151,8 @@ p {
 
 .clear-completed:active {
   color:  hsl(220, 98%, 61%);
+}
+
+.active {
+  color: hsl(220, 98%, 61%);
 }
