@@ -156,3 +156,7 @@ p {
 .active {
   color: hsl(220, 98%, 61%);
 }
+
+.item .dragging {
+  opacity: 0;
+}
